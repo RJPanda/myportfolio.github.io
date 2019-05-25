@@ -15,21 +15,16 @@
       <div class="col-12"></div>
     </div>
 
-    <div class="col"><img class="col-12 grid-noGutter-noBottom">
-      <div class="col-6_xs-12 project-block">
 
-      <ul class="project-block block-image">
-            {% for image in site.mywork %}
-          <li><img src="{{ image.image_path }}" alt="{{ image.title }}"/></li>
-            {% endfor %}
-      </ul>
+    <div class="grid-noMargin col-9">
+        {% for image in site.mywork %}
+          <div class="col-4_xs-12 project-block">
 
-
-
+            <a href="{{ item.url }}" title="{{ item.title }}">
 
               <div class="block-image"
               {% if item.annimation-path != '' %}
-               style="background-image: url('{{ item.image }}{{item.animation-path}}');"
+               style="background-image: url('{{ image.image_path }}{{item.animation-path}}');"
               {% endif %}>
                 {% if item.animation-id %}
                   <div class="block-animation" id="{{ item.animation-id }}">
@@ -48,6 +43,10 @@
               </div>
             </a>
           </div>
-              </div>
+        {% endfor %}
+      </div>
+
   </div>
+
+
 </section>

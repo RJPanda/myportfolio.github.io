@@ -25,6 +25,10 @@ section, #resume {
   padding: 9vh 19vw 10vh 19vw;
 }
 
+section, #my-work {
+  padding: 9vh 5vw 10vh 5vw;
+}
+
 .featured {
   background-color: #30343f; /* DARK GREY */
   color: #f2f2f2; /* WARM WHITE */
@@ -359,6 +363,16 @@ a {
 }
 .project-block h2 {
   padding-top: 1rem;
+}
+
+.block-image {
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-bottom: 0;
 }
 
 .block-animation {
