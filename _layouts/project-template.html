@@ -2,16 +2,16 @@
 layout: default
 ---
 
-<section id="portfolio-pages">
+<section id="mywork-pages">
 
 <div class="block-image">
-{% for project-template in site.portfolio %}
-     <img src="{{baseurl}}/assets/images/{{image}}" alt="{{project-template.title}}">
+{% for project-template in site.mywork %}
+     <img src="{{image.image_path}}" alt="{{project-template.title}}">
 
 {% endfor %}
   </div>
 
-  <div class ="portfolio-text">
+  <div class ="my-work-text">
     <h1>{{ page.title }}</h1>
 
     <div class="grid-noGutter-noBottom">
@@ -64,6 +64,6 @@ layout: default
         </div>
       </div>
 
-    </div><!-- END GRIG -->
+    </div><!-- END GRID -->
   <div><!-- END PORTFOLIO-TEXT -->
 </section>

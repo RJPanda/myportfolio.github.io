@@ -13,6 +13,6 @@ brief:
 solution:
   - Technical solutions aside, this is a map I made for this project. The visual concept was to capture the strong sense of rural community in the Western Frontier. Stylistically it takes its influence from Tolkien and video game maps.
 
-image_path: /assets/images/western-map.jpg
+image_path: ./assets/images/western-map.jpg
 
 ---

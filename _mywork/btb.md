@@ -15,7 +15,7 @@ solution:
 animation-path: assets/animations/data.json
 animation-id: be_there_beauty
 
-image_path: /assets/images/Instagram-display.jpg
+image_path: ./assets/images/Instagram-display.jpg
 hidden-index-banner: true
 
 
