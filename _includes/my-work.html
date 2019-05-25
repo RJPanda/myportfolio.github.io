@@ -3,11 +3,11 @@
     <div class="col-2 right">
       <div class="col-12">
         <h1> work </h1>
-        <ul class="col-12">
-          <li> web design </li>
-          <li> illustration </li>
-          <li> maps </li>
-        </ul>
+        {% for catagories in site.mywork %}
+          <ul class="col-12">
+            <li> {{ item.catagories }} </li>
+          </ul>
+        {% endfor %}
       </div>
     </div>
 
@@ -20,7 +20,10 @@
         {% for item in site.mywork %}
           <div class="col-4_xs-12 project-block">
 
-            <a href="{{ item.url }}" title="{{ item.title }}">
+            {% for item in site.mywork %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ mywork.url }}">
+            <!-- <a href="{{ baseurl }}{{ item.url }}/mywork/{{mywork.site}}"> -->
+            {% endfor %}
 
               <div class="block-image"
               {% if item.annimation-path != '' %}

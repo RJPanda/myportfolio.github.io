@@ -13,6 +13,7 @@ solution:
   - I chose to use a formal, symmetrical grid structure and clean minimalist style to carry through both the covers and spreads. My covers are my interpretation of one of the articles on the mysterious and private artist Stanley Donwood (the creative mind behind Radiohead’s album art).
 image_path: ./assets/images/taylor-covers.jpg
 
+permalink: /:title
 
 
 

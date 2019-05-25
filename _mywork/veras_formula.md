@@ -13,4 +13,6 @@ solution:
   - Product range focuses of minimal, high quality ingredients. Ingredients are intended to enhance the qualities of each-other. A nod to the Australian packaging with the mosaic pattern. Keywords, Simple, pure, minimal, synergy, science.
 image_path: ./assets/images/pure-packaging.jpg
 
+permalink: /:title
+
 ---

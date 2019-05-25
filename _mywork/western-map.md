@@ -15,4 +15,5 @@ solution:
 
 image_path: ./assets/images/western-map.jpg
 
+permalink: /:title
 ---

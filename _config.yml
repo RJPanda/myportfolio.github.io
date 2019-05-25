@@ -3,8 +3,9 @@ title: KM Portfolio
 email: katherine.molloy@gmail.com
 description: Portfolio site May 2019
 baseurl: /myportfolio
-url: "https://myportfolio.github.io"
+url: "myportfolio.github.io"
 github_username:  rjpanda
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
@@ -16,11 +17,26 @@ collections:
   - mywork
 output: true
 
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+defaults:
+scope:
+path: _mywork
+Values:
+layout: project-template
+
+input: GFM
+# Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+syntax_highlighter: rouge
+syntax_highlighter_opts:
+  # Use existing pygments syntax highlighting css
+css_class: 'highlight'
+
+
+excerpt_separator: ""
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
