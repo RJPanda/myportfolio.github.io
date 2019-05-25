@@ -21,6 +21,16 @@ section, #about {
  padding: 7vh 19vw 10vh 19vw;
 }
 
+section, #resume {
+  padding: 9vh 19vw 10vh 19vw;
+}
+
+.featured {
+  background-color: #30343f; /* DARK GREY */
+  color: #f2f2f2; /* WARM WHITE */
+  box-shadow: 0 5px 10px -5px #595d65, 0 -5px 10px -5px #595d65;
+}
+
 /* FONTS AND TEXT */
 
 :root {
@@ -64,6 +74,18 @@ h1::first-letter {
 	color: #8cc2db;
 }
 
+.featured h1 {
+	color: #f2f2f2;
+}
+
+.featured  h1::first-letter {
+	color: #f2f2f2;
+}
+
+.center {
+  text-align: center;
+}
+
 .right {
   text-align: right;
 }
@@ -83,6 +105,16 @@ h1::first-letter {
   background-size: 4px 100%;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa {
+  font-size: 1.3em;
+  color: #f2f2f2; /* WARM WHITE */
 }
 
 /* IMAGES */
@@ -240,4 +272,69 @@ h1::first-letter {
 
 #skills {
   margin-bottom: 1rem;
+}
+
+/* RESUME */
+
+.title h1 {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.title h2 {
+  font-family: 'silkaregular';
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem; line-height: 1.25;
+}
+
+.heading {
+  font-family: 'silkaregular';
+  color: #8CC2DB; /* DUSTY BLUE */
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.subheading {
+  font-family: 'silkaregular';
+  color: #f2f2f2; /* WARM WHITE */
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 2em;
+}
+
+.previous-career {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+.icons {
+  display: inline-block;
+  background-color: #8cc2db;
+  width: 3em;
+  max-height: 3em;
+  min-height: 3em;
+  border-radius: 90%;
+  text-align: center;
+}
+
+.icons:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.icons i {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
 }
