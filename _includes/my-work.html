@@ -1,0 +1,53 @@
+<section id="my_work">
+  <div class="grid">
+    <div class="col-2 right">
+      <div class="col-12">
+        <h1> work </h1>
+        <ul class="col-12">
+          <li> web design </li>
+          <li> illustration </li>
+          <li> maps </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-1 grid-noGutter-noBottom line-center">
+      <div class="col-12"></div>
+    </div>
+
+    <div class="col"><img class="col-12 grid-noGutter-noBottom">
+      <div class="col-6_xs-12 project-block">
+
+      <ul class="project-block block-image">
+            {% for image in site.mywork %}
+          <li><img src="{{ image.image_path }}" alt="{{ image.title }}"/></li>
+            {% endfor %}
+      </ul>
+
+
+
+
+              <div class="block-image"
+              {% if item.annimation-path != '' %}
+               style="background-image: url('{{ item.image }}{{item.animation-path}}');"
+              {% endif %}>
+                {% if item.animation-id %}
+                  <div class="block-animation" id="{{ item.animation-id }}">
+                    <script type="text/javascript">
+                      var animation_{{ item.animation-id }} = bodymovin.loadAnimation({
+                        container: document.getElementById('{{ item.animation-id }}'),
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: '{{ item.animation-path }}'
+                      });
+                    </script>
+                  </div>
+                {% endif %}
+                <div class="block-text block-hover"><h3>{{ item.title }}</h3></div>
+              </div>
+            </a>
+          </div>
+              </div>
+  </div>
+</section>
