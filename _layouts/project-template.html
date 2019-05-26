@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<section id="mywork-pages">
+
+  <div class="block-image">
+    {% for project-template in site.mywork %}
+      <img src="{{image.image_path}}" alt="{{project-template.title}}">
+    {% endfor %}
+  </div>
+
+  <div class ="my-work-text">
+    <h1>{{ page.title }}</h1>
+
+  <div class="grid-noGutter-noBottom">
+    <div class="col-4 grid">
+      <div class="col-12">
+        <h3>Media</h3>
+        {% for media in page.media %}
+          <ul>
+            <li>{{media}}</li>
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-1 grid-noGutter-noBottom solid-line-center">
+      <div class="col-12"></div>
+    </div>
+
+    <div class="col-6 grid">
+      <div class="col-12">
+        <h3>Catagory</h3>
+          {% for category in page.categories %}
+            <ul>
+              <li>{{category}}</li>
+            </ul>
+          {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-4 grid">
+      <div class="col-12">
+        <h3>Brief</h3>
+        {% for brief in page.brief %}
+        <p>{{brief}}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-1 grid-noGutter-noBottom solid-line-center">
+      <div class="col-12"></div>
+    </div>
+
+    <div class="col-6 grid">
+      <div class="col-12">
+        <h3>Design Solution</h3>
+        {% for solution in page.solution %}
+        <p>{{solution}}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    </div> <!-- END GRID -->
+  </div> <!-- END MY-WORK-TEXT -->
+</section>
