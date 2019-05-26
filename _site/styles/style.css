@@ -595,30 +595,3 @@ a[download]::before {
 .copyright-text span {
   font-weight: 700;
 }
-
-/* PORTFOLIO PAGES */
-
-.portfolio-text h1 {
-  margin-top: 1rem;
-  padding-left: 8px;
-  font-size: 8vh;
-}
-
-.portfolio-text h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.portfolio-text ul {
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding-right: 1rem;
-}
-
-.solid-line-center {
-  background-image: linear-gradient(#8cc2db, #8cc2db);
-  background-size: 4px 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
