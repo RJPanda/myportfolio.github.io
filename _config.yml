@@ -5,7 +5,7 @@ description: Portfolio site May 2019
 baseurl: "/myportfolio"
 url: "http://myportfolio.github.io"
 github_username:  rjpanda
-permalink: /:title/
+permalink: permalink: /index.html
 
 # Build settings
 markdown: kramdown
