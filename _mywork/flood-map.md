@@ -15,5 +15,4 @@ solution:
 image_path: ./assets/images/ferry-map.jpg
 
 permalink: /:title
-
 ---

@@ -1,7 +1,7 @@
 /* CLASSES FOR TESTING */
-div {
+/* div {
   border: 1px solid yellow;
-}
+} */
 
 /* CSS RESET */
 
@@ -9,6 +9,20 @@ div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#test {
+  background-color: pink;
+  color: blue;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: red;
+
+
 }
 
 /* SECTION UNIVERSAL */

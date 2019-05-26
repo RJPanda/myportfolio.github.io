@@ -19,6 +19,4 @@ image_path: ./assets/images/Instagram-display.jpg
 hidden-index-banner: true
 
 permalink: /:title
-
-
 ---

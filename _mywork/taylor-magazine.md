@@ -14,8 +14,4 @@ solution:
 image_path: ./assets/images/taylor-covers.jpg
 
 permalink: /:title
-
-
-
-
 ---

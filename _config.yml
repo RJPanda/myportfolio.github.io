@@ -5,20 +5,24 @@ description: Portfolio site May 2019
 baseurl: "/myportfolio"
 url: "http://myportfolio.github.io"
 github_username:  rjpanda
-permalink: /:title/
+
 
 # Build settings
 markdown: kramdown
 input: GFM
 parse_block_html: true
+auto_ids: true
+hard_wrap: false
+syntax_highlighter: rouge
 
 theme: minima
 plugins:
   - jekyll-feed
 
 collections:
-  - mywork
-output: true
+  mywork:
+  output: true
+permalink: pretty
 
 defaults:
 scope:

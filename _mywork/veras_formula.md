@@ -14,5 +14,4 @@ solution:
 image_path: ./assets/images/pure-packaging.jpg
 
 permalink: /:title
-
 ---
