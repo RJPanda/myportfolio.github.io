@@ -1,74 +1,416 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>KM Portfolio | Portfolio site May 2019</title>
-<meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="KM Portfolio" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Portfolio site May 2019" />
-<meta property="og:description" content="Portfolio site May 2019" />
-<link rel="canonical" href="http://localhost:4000/myportfolio/" />
-<meta property="og:url" content="http://localhost:4000/myportfolio/" />
-<meta property="og:site_name" content="KM Portfolio" />
-<script type="application/ld+json">
-{"name":"KM Portfolio","description":"Portfolio site May 2019","@type":"WebSite","url":"http://localhost:4000/myportfolio/","headline":"KM Portfolio","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/myportfolio/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/myportfolio/feed.xml" title="KM Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<html>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/myportfolio/">KM Portfolio</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+<!DOCTYPE HTML>
+<head>
+  <html lang="en">
 
-        <div class="trigger"><a class="page-link" href="/myportfolio/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">May 25, 2019</span>
-        <h3>
-          <a class="post-link" href="/myportfolio/welcome-to-jekyll/">
-            Welcome to Jekyll!
-          </a>
-        </h3></li></ul>
+<!-- Meta Data -->
+<meta charset="utf-8">
 
-    <p class="rss-subscribe">subscribe <a href="/myportfolio/feed.xml">via RSS</a></p></div>
+<!-- Meta data for SEO purposes. -->
+  <title> KM Portfolio </title>
+  <meta name="author" content="Katherine Molloy">
+  <meta name="description" content="Katherine Molloy | Visual designer | Portfolio website | Brisbane | 2019">
 
+<!-- meta data to tell the browser that your devide is responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!--  Social media sharing META Tags -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="/">
+  <meta name="twitter:card" content="">
+  <meta name="og:site_name" content="<www.katherinemolloy.com.au">
+
+<!-- EXTERNAL CSS STYLESHEETS -->
+  <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+<!-- FONTS -->
+  <!-- BANNER -->
+  <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+
+  <!-- BODY AND FALLBACKS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+<!-- CUSTOM STYLESHEETS -->
+  <link rel="stylesheet" href="./styles/style.css">
+
+<!-- Logo icon link -->
+  <link rel="shortcut icon" href="./assets/images/logo_icon.ico" type="image/x-icon"/>
+
+<!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_html.js"></script>
+
+</head>
+
+  <body>
+
+    <section class="intro-banner">
+  <div id="box-effect">
+    <span> Katherine Molloy </span>
+    <h2> Visual designer </h2>
+    <div class="down-arrow bounce"></div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="grid-equalHeight">
+    <div class="col-3 grid-noGutter">
+      <div class="col-12 right">
+        <div class="box-image end"><img class="col-12" src="./assets/images/portrait.jpg"></div>
       </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/myportfolio/"></data>
+    </div>
 
-  <div class="wrapper">
+    <div class="col-1 grid-noGutter line-center">
+      <div class="col-12"></div>
+    </div>
 
-    <h2 class="footer-heading">KM Portfolio</h2>
+    <div class="col-8 grid-noGutter block-image" id ="skills">
+      <script>
+        lottie.loadAnimation({
+          container: skills, // the dom element that will contain the animation
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'assets/animations/skills.json' // the path to the animation json
+        });
+      </script>
+    </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">KM Portfolio</li><li><a class="u-email" href="mailto:katherine.molloy@gmail.com">katherine.molloy@gmail.com</a></li></ul>
+    <div class="col-12 grid-noGutter">
+      <div class="col-5">
+        <h1> about me </h1>
       </div>
+      <div class="col-7 grid-noGutterd">
+        <p> Hello there, I’m Katherine, I’m a visual designer. My style is clean and thoughtful, I am a person who strives to deliver clever design, using thoughtful work practices. Helping people express and communicate complex concepts is my passion. At home I love cooking, gaming and constantly filling my head with a very broad range of knowledge (particularly history, comedy and science). </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rjpanda"><svg class="svg-icon"><use xlink:href="/myportfolio/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rjpanda</span></a></li></ul>
+
+<section class="featured" id="resume">
+
+<!-- HEADING -->
+
+  <div class="grid-equalHeight grid-noGutter title">
+    <div class="col-5 grid-noGutter right">
+      <h1> education </h1>
+  </div>
+
+  <div class="col-2 grid-noGutter"></div>
+
+  <div class="col-5 grid-noGutter">
+    <h1> experience </h1>
+  </div>
 </div>
 
-      <div class="footer-col footer-col-3">
-        <p>Portfolio site May 2019</p>
+<!-- ROW ONE -->
+  <div class="grid-equalHeight grid-noGutter">
+    <div class="col-5 grid-noGutter right">
+      <div class="col-12">
+        <h3 class="heading"> web development </h3>
+        <a href="https://www.instituteofcode.com/courses/web-dev/" target="_blank"><p class="subheading"> insitute of code - 2018</p></a>
+        <p class= "description">A web development boot camp where I learnt how to use HTML, CSS and jQuery to design, create and build websites from scratch.</p>
+      </div>
+    </div>
+
+    <div class="col-2 line-center center">
+      <div class="icons">
+        <i class="fa fa-cogs"></i>
+      </div>
+    </div>
+
+    <div class="col-5 grid-noGutter">
+      <div class="col-12">
+        <h3 class="heading"> freelancer </h3>
+        <p class="subheading"> cyber security, finance, hospitality </p>
+        <p class= "description"> I have freelanced as a designer specialising in branding identity, presentations and advertising. <br><br>Freelancing has improved my communication skills, taught me how to handle projects from brief to completion and refined my work-flow. </p>
       </div>
     </div>
 
   </div>
 
-</footer>
-</body>
+<!-- ROW TWO -->
+  <div class="grid-equalHeight grid-noGutter">
+    <div class="col-5 grid-noGutter right">
+      <div class="col-12">
+        <h3 class="heading"> graphic design school </h3>
+        <a href="http://www.catc.edu.au/courses/diploma-of-graphic-design" target="_blank"><p class="subheading"> CATC - 2015 </p></a>
+        <p class= "description"> An accredited graphic design course focusing on typography, layout and design, colour psychology, computer graphics, advanced advertising, packaging design, promotional design and commercial illustration. </p>
+      </div>
+    </div>
 
+    <div class="col-2 line-center center">
+      <div class="icons">
+        <i class="fa fa-paint-brush"></i>
+      </div>
+    </div>
+
+    <div class="col-5 grid-noGutter">
+      <div class="col-12">
+        <h3 class="heading"> junior graphic designer </h3>
+        <a href="https://www.bioconcepts.com.au/" target="_blank"><p class="subheading"> 2018 - bioconcepts </p></a>
+        <p class= "description"> Bio Concepts is Nutraceuticals firm founded by Nutritional Biochemist and author Henry Osiecki.  <br><br> The firm hired me to help illustrate Mr Osiecki's upcoming book on drug addictions. These illustrations were predominantly anatomical diagrams and chemical reaction infographics. The role also involved assisting their senior graphic designer with the day to day promotional graphics for the company. </p>
+      </div>
+    </div>
+
+  </div>
+
+<!-- ROW Three -->
+  <div class="grid-equalHeight grid-noGutter">
+    <div class="col-5 grid-noGutter right">
+      <div class="col-12">
+        <h3 class="heading"> bachelor of design </h3>
+        <a href="https://www.qut.edu.au/courses/bachelor-of-design-landscape-architecture" target="_blank"><p class="subheading"> qut landscape architecture - 2013 </p></a>
+        <p class= "description"> I studied landscape systems and the complexity of the landscape in relation to the creation of outdoor spaces with positive cultural and environmental impact. (Second major - Urban and Regional Planning) </p>
+      </div>
+    </div>
+
+    <div class="col-2 line-center center">
+      <div class="icons">
+        <i class="fa fa-graduation-cap"></i>
+      </div>
+    </div>
+
+
+    <div class="col-5 grid-noGutter">
+      <div class="col-12">
+        <h3 class="heading"> graphic design intern </h3>
+        <a href="https://www.betherebeauty.com.au/" target="_blank"><p class="subheading"> 2017 - be there beauty </p></a>
+        <p class= "description"> Be There Beauty is an app that allows the consumer to view, search and book beauty service appointments.<br><br>This role involved creating digital marketing and brand identity assets for both the app and clients outside of the beauty space associated with a partnering marketing firm. </p>
+      </div>
+    </div>
+
+  </div>
+
+<!-- PREVIOUS CAREER TITLE -->
+
+  <div class="grid-noGutter">
+    <div class="col-2 grid-noGutter"></div>
+    <div class="col-8 grid-noGutter title previous-career">
+      <div>
+        <h2> previous career </h2>
+      </div>
+    </div>
+    <div class="col-2 grid-noGutter"></div>
+  </div>
+
+<!-- PREVIOUS CAREER DATA -->
+
+  <div class="grid-equalHeight grid-noGutter">
+    <div class="col-5 grid-noGutter right">
+      <div class="col-12">
+        <h3 class="heading"> advanced diplomas </h3>
+        <a href="https://tafeqld.edu.au/courses/17915/diploma-of-horticulture" target="_blank"><p class="subheading"> TAFE north - 2007 </p></a>
+        <p class= "description"> Dual advanced diplomas in Horticulture and Conservation. Learning how to identify, care for and protect tropical flora and their environment. The course had a hands-on and scientific approach. </p>
+      </div>
+    </div>
+
+    <div class="col-2 line-center center">
+      <div class="icons">
+        <i class="fa fa-leaf"></i>
+      </div>
+    </div>
+
+    <div class="col-5 grid-noGutter">
+      <div class="col-12">
+        <h3 class="heading"> horticulturalist </h3>
+        <p class="subheading"> 2005 - 2012 </p>
+        <p class= "description"> I was horticulturalist for 6+ years, working in conservation, maintenance and retail. This career nurtured a lifelong love of sustainability, science and the importance of green space in wellbeing. </p>
+      </div>
+    </div>
+  </div>
+
+<!-- BOTTOM LINE -->
+
+  <div class="grid-noGutter">
+    <div class="col-4 grid-noGutter"></div>
+    <div class="col-4 grid-noGutter"></div>
+    <div class="col-4 grid-noGutter"></div>
+  </div>
+
+</section>
+
+
+<section id="my_work">
+  <div class="grid">
+    <div class="col-2 right">
+      <div class="col-12">
+        <h1> work </h1>
+        
+          <ul class="col-12">
+            <li>  </li>
+          </ul>
+        
+          <ul class="col-12">
+            <li>  </li>
+          </ul>
+        
+          <ul class="col-12">
+            <li>  </li>
+          </ul>
+        
+          <ul class="col-12">
+            <li>  </li>
+          </ul>
+        
+          <ul class="col-12">
+            <li>  </li>
+          </ul>
+        
+          <ul class="col-12">
+            <li>  </li>
+          </ul>
+        
+      </div>
+    </div>
+
+    <div class="col-1 grid-noGutter-noBottom line-center">
+      <div class="col-12"></div>
+    </div>
+
+
+    <div class="grid-noMargin col-9">
+        
+          <div class="col-4_xs-12 project-block">
+
+
+
+
+
+
+
+              <div class="block-image"
+              
+               style="background-image: url('./assets/images/bottle-beer-scene.jpg');"
+              >
+                
+                <div class="block-text block-hover"><h3>beer bottles</h3></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col-4_xs-12 project-block">
+
+
+
+
+
+
+
+              <div class="block-image"
+              
+               style="background-image: url('./assets/images/Instagram-display.jpgassets/animations/data.json');"
+              >
+                
+                  <div class="block-animation" id="be_there_beauty">
+                    <script type="text/javascript">
+                      var animation_be_there_beauty = bodymovin.loadAnimation({
+                        container: document.getElementById('be_there_beauty'),
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: 'assets/animations/data.json'
+                      });
+                    </script>
+                  </div>
+                
+                <div class="block-text block-hover"><h3>be there beauty</h3></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col-4_xs-12 project-block">
+
+
+
+
+
+
+
+              <div class="block-image"
+              
+               style="background-image: url('./assets/images/ferry-map.jpg');"
+              >
+                
+                <div class="block-text block-hover"><h3>flood map</h3></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col-4_xs-12 project-block">
+
+
+
+
+
+
+
+              <div class="block-image"
+              
+               style="background-image: url('./assets/images/taylor-covers.jpg');"
+              >
+                
+                <div class="block-text block-hover"><h3>taylor magazine</h3></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col-4_xs-12 project-block">
+
+
+
+
+
+
+
+              <div class="block-image"
+              
+               style="background-image: url('./assets/images/pure-packaging.jpg');"
+              >
+                
+                <div class="block-text block-hover"><h3>vera's formula</h3></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col-4_xs-12 project-block">
+
+
+
+
+
+
+
+              <div class="block-image"
+              
+               style="background-image: url('./assets/images/western-map.jpg');"
+              >
+                
+                <div class="block-text block-hover"><h3>western map</h3></div>
+              </div>
+            </a>
+          </div>
+         <!-- DO NOT MOVE THIS, IT WILL BREAK THE GRID -->
+      </div>
+    </div>
+</section>
+
+
+
+  </body>
 </html>
