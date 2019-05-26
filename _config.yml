@@ -18,6 +18,7 @@ plugins:
 collections:
   - mywork
 output: true
+permalink: /mywork/:output_ext
 
 defaults:
 scope:

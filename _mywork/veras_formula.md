@@ -1,18 +1,20 @@
 ---
 layout: project-template
 title: vera's formula
+permalink: /:title
+
 categories:
   - Packaging
   - Brand Identity
 media:
   - Illustrator
   - Photoshop
+
 brief:
   - Bio Concepts - Pure Innovation product range. Generate packaging ideas for an international version of the label. Keep the original Pure Innovation logo. Keep the blue colour palette. Modernise and differentiate from the original label.
 solution:
   - Product range focuses of minimal, high quality ingredients. Ingredients are intended to enhance the qualities of each-other. A nod to the Australian packaging with the mosaic pattern. Keywords, Simple, pure, minimal, synergy, science.
-image_path: ./assets/images/pure-packaging.jpg
 
-permalink: /:title
+image_path: ./assets/images/pure-packaging.jpg
 
 ---
