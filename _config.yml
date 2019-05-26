@@ -3,8 +3,9 @@ title: KM Portfolio
 email: katherine.molloy@gmail.com
 description: Portfolio site May 2019
 baseurl: "/myportfolio"
-url: "https://rjpanda.github.io/myportfolio.github.io/"
+url: "http://myportfolio.github.io"
 github_username:  rjpanda
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
