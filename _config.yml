@@ -12,7 +12,7 @@ markdown: kramdown
 input: GFM
 parse_block_html: true
 
-theme: minima
+theme: ""
 plugins:
   - jekyll-feed
 
