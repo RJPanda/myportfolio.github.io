@@ -2,7 +2,7 @@
 title: KM Portfolio
 email: katherine.molloy@gmail.com
 description: Portfolio site May 2019
-baseurl: "myportfolio"
+baseurl: "/myportfolio"
 url: ""
 github_username:  rjpanda
 permalink: /:title/
