@@ -1,0 +1,37 @@
+
+title: KM Portfolio
+email: katherine.molloy@gmail.com
+description: Portfolio site May 2019
+baseurl: "myportfolio"
+url: ""
+github_username:  rjpanda
+permalink: /:title/
+
+# Build settings
+markdown: kramdown
+input: GFM
+parse_block_html: true
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  - mywork
+output: true
+
+defaults:
+scope:
+path: _mywork
+Values:
+layout: project-template
+
+excerpt_separator: ""
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
