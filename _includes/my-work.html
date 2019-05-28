@@ -2,12 +2,19 @@
   <div class="grid">
     <div class="col-2 right">
       <div class="col-12">
+
+
         <h1> work </h1>
-        {% for catagories in site.mywork %}
-          <ul class="col-12">
-            <li> {{ item.catagories }} </li>
-          </ul>
-        {% endfor %}
+
+    {% for item in site.mywork %}
+    <a href="{{ mywork.url | prepend: site.baseurl }}">
+            <p>{{ item.disciplines }}</p>
+    </a>
+    {% endfor %}
+
+
+
+
       </div>
     </div>
 

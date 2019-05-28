@@ -21,8 +21,8 @@ plugins:
 
 collections:
   mywork:
-  output: true
-permalink: /mywork/:title # THIS FORMAT LINKS SITE TO CSS PROPERLY
+    output: true
+permalink: /:mywork/:title # THIS FORMAT LINKS SITE TO CSS PROPERLY - /:mywork/:title
 
 excerpt_separator: ""
 exclude:

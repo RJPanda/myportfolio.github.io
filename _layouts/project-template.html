@@ -4,22 +4,21 @@ layout: default
 
 <section id="mywork-pages">
 
-  <div class="block-image">
-    {% for item in site.mywork %}
-      <img src="{{ item.image_path }}">
-    {% endfor %}
+  <div class = "work-image-container">
+    <div class="work-image"> <img src="{{ page.image_path }}"> </div>
   </div>
+
 
   <div class ="my-work-text">
     <h1>{{ mywork.title }}</h1>
 
   <div class="grid-noGutter-noBottom">
-    <div class="col-4 grid">
+    <div class="col-5 grid">
       <div class="col-12">
-        <h3>Media</h3>
-        {% for media in item.media %}
+        <h3>media</h3>
+        {% for media in page.media %}
           <ul>
-            <li>{{media}}</li>
+            <li>{{ media }}</li>
           </ul>
         {% endfor %}
       </div>
@@ -31,33 +30,33 @@ layout: default
 
     <div class="col-6 grid">
       <div class="col-12">
-        <h3>Catagory</h3>
-          {% for category in item.categories %}
+        <h3>disciplines</h3>
+          {% for disciplines in page.disciplines %}
             <ul>
-              <li>{{category}}</li>
+              <li>{{ disciplines }}</li>
             </ul>
           {% endfor %}
       </div>
     </div>
 
-    <div class="col-4 grid">
+    <div class="col-5 grid">
       <div class="col-12">
-        <h3>Brief</h3>
-        {% for brief in item.brief %}
-        <p>{{brief}}</p>
-        {% endfor %}
+        <h3>brief</h3>
+      {% for brief in page.brief %}
+        <p>{{ brief }}</p>
+      {% endfor %}
       </div>
     </div>
 
-    <div class="col-1 grid-noGutter-noBottom solid-line-center">
+    <div class="col-1 grid-noGutter-noBottom line-center">
       <div class="col-12"></div>
     </div>
 
     <div class="col-6 grid">
       <div class="col-12">
-        <h3>Design Solution</h3>
-        {% for solution in item.solution %}
-        <p>{{solution}}</p>
+        <h3>design solution</h3>
+        {% for solution in page.solution %}
+          <p>{{ solution }}</p>
         {% endfor %}
       </div>
     </div>
