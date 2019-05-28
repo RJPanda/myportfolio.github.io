@@ -609,3 +609,39 @@ a[download]::before {
 .copyright-text span {
   font-weight: 700;
 }
+
+/* TEST */
+
+.nav-item {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.post-nav {
+    text-align: center;
+    padding: 1rem;
+}
+
+.post-title {
+    display: block;
+}
+
+/**
+ * override column size for mobile
+ */
+@media (max-width: 40.0rem) {
+    .row .column.column-33, .row .column.column-34 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.preview-panel {
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid $color-initial;
+
+    &:hover {
+        border: 1px solid $grey-color-light;
+    }
+}

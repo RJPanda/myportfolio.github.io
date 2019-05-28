@@ -1,4 +1,4 @@
-<section markdown="1" id="my-work">
+<section id="my-work">
   <div class="grid">
     <div class="col-2 right">
       <div class="col-12">
@@ -18,12 +18,12 @@
 
     <div class="grid-noMargin col-9">
 
-  {% for item in site.mywork %}
+{% for item in site.mywork %}
     <div class="col-4_xs-12 project-block">
-      <a href="{{ item.url | prepend: baseurl }}" title="{{ item.title }}">
+      <a href="{{ item.url | prepend: site.baseurl }}">
 
               <div class="block-image"
-              {% if item.annimation-path != '' %}
+              {% if item.animation-path != '' %}
                style="background-image: url('{{ item.image_path }}{{item.animation-path}}');"
               {% endif %}>
                 {% if item.animation-id %}

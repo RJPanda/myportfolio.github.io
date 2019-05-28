@@ -5,19 +5,19 @@ layout: default
 <section id="mywork-pages">
 
   <div class="block-image">
-    {% for project-template in site.mywork %}
-      <img src="{{image.image_path}}" alt="{{project-template.title}}">
+    {% for item in site.mywork %}
+      <img src="{{ item.image_path }}">
     {% endfor %}
   </div>
 
   <div class ="my-work-text">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ mywork.title }}</h1>
 
   <div class="grid-noGutter-noBottom">
     <div class="col-4 grid">
       <div class="col-12">
         <h3>Media</h3>
-        {% for media in page.media %}
+        {% for media in item.media %}
           <ul>
             <li>{{media}}</li>
           </ul>
@@ -32,7 +32,7 @@ layout: default
     <div class="col-6 grid">
       <div class="col-12">
         <h3>Catagory</h3>
-          {% for category in page.categories %}
+          {% for category in item.categories %}
             <ul>
               <li>{{category}}</li>
             </ul>
@@ -43,7 +43,7 @@ layout: default
     <div class="col-4 grid">
       <div class="col-12">
         <h3>Brief</h3>
-        {% for brief in page.brief %}
+        {% for brief in item.brief %}
         <p>{{brief}}</p>
         {% endfor %}
       </div>
@@ -56,7 +56,7 @@ layout: default
     <div class="col-6 grid">
       <div class="col-12">
         <h3>Design Solution</h3>
-        {% for solution in page.solution %}
+        {% for solution in item.solution %}
         <p>{{solution}}</p>
         {% endfor %}
       </div>

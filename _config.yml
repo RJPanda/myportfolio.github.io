@@ -22,13 +22,7 @@ plugins:
 collections:
   mywork:
   output: true
-permalink: pretty
-
-defaults:
-scope:
-path: _mywork
-Values:
-layout: project-template
+permalink: /mywork/:title # THIS FORMAT LINKS SITE TO CSS PROPERLY
 
 excerpt_separator: ""
 exclude:
