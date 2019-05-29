@@ -1,4 +1,5 @@
 /* CLASSES FOR TESTING */
+
 /* div {
   border: 1px solid yellow;
 } */
@@ -43,12 +44,12 @@ section, #my-work {
   padding: 9vh 5vw 10vh 5vw;
 }
 
-section, #mywork-pages {
- padding: 6vh 15vw 10vh 15vw;
-}
-
 section, #contact {
  padding: 9vh 23vw 10vh 15vw;
+}
+
+section, #mywork-pages {
+ padding: 6vh 17vw 8vh 17vw;
 }
 
 .featured {
@@ -138,9 +139,8 @@ a {
   color: inherit;
 }
 
-.fa {
+.fa, .fas {
   font-size: 1.3em;
-  color: #f2f2f2; /* WARM WHITE */
 }
 
  ul {
@@ -445,20 +445,22 @@ a {
 
 /* MY-WORK PAGES */
 
-.work-image-container {
-  display: flex;
-  justify-content: center;
-}
 
 .work-image {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-image img {
+  max-height: 800px;
+
 }
 
 .my-work-text h1 {
   margin-top: 1rem;
-  padding-left: 8px;
+  margin-bottom: 1rem;
   font-size: 8vh;
 }
 
@@ -475,12 +477,36 @@ a {
   text-transform: capitalize;
 }
 
-/* .solid-line-center {
+.work-nav {
+  padding-top: 1rem 0 1rem 0;
+  margin-top: 1rem;
+}
+
+.nav-icons {
+  color: #8cc2db;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.fa-caret-right {
+  font-size: 2rem;
+}
+
+.nxt, .prev {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.fa-caret-left {
+  font-size: 2rem;
+}
+
+.solid-line-center {
   background-image: linear-gradient(#8cc2db, #8cc2db);
   background-size: 4px 100%;
   background-repeat: no-repeat;
   background-position: center center;
-} */
+}
 
 /* CONTACT FORM */
 

@@ -2,18 +2,15 @@
 layout: default
 ---
 
-<section id="mywork-pages">
+<section id="mywork-pages ">
 
-  <div class = "work-image-container">
-    <div class="work-image"> <img src="{{ page.image_path }}"> </div>
-  </div>
+  <div class="grid my-work-text"> <!-- START GRID -->
 
+    <div class="col-12 work-image">
+      <img src="{{ page.image_path }}">
+    </div>
 
-  <div class ="my-work-text">
-    <h1>{{ mywork.title }}</h1>
-
-  <div class="grid-noGutter-noBottom">
-    <div class="col-5 grid">
+    <div class="col-5 grid ">
       <div class="col-12">
         <h3>media</h3>
         {% for media in page.media %}
@@ -48,7 +45,7 @@ layout: default
       </div>
     </div>
 
-    <div class="col-1 grid-noGutter-noBottom line-center">
+    <div class="col-1 line-center">
       <div class="col-12"></div>
     </div>
 
@@ -61,6 +58,44 @@ layout: default
       </div>
     </div>
 
-    </div> <!-- END GRID -->
-  </div> <!-- END MY-WORK-TEXT -->
+  <div class="col-12">
+    {% capture the_collection %}{{ page.collection }}{% endcapture %}
+      {% if page.collection %}
+        {% assign  document = site[the_collection]  %}
+      {% endif %}
+    <h1> {{ page.title }} </h1>
+    {% for links in document  %}
+      {% if links.title == page.title %}
+        {% unless forloop.first %}
+          {% assign prevurl = prev.url %}
+        {% endunless %}
+        {% unless forloop.last %}
+          {% assign next = document[forloop.index] %}
+          {% assign nexturl = next.url %}
+        {% endunless %}
+      {% endif %}
+      {% assign prev = links %}
+    {% endfor %}
+  </div>
+
+    <script>
+      document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = '{{ prevurl }}'; }
+      if (e.keyCode == '39') { window.location = '{{ nexturl }}'; }
+      };
+    </script>
+
+    <div class="grid-spaceBetween col-12 work-nav">
+      <div class="col-5">
+        {% if prevurl %}
+        <a href="{{prevurl | prepend: site.baseurl }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{prevurl}}</a>
+        {% endif %}
+      </div>
+      <div class="col-5 right">
+        {% if nexturl %}
+        <a href="{{nexturl | prepend: site.baseurl }}" class="nxt">{{nexturl}} <i class="nav-icons fa fa-caret-right"> </i> </a>
+        {% endif %}
+      </div>
+    </div>
+  </div> <!-- END GRID -->
 </section>
