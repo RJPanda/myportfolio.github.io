@@ -66,6 +66,7 @@ layout: default
     <h1> {{ page.title }} </h1>
     {% for links in document  %}
       {% if links.title == page.title %}
+
         {% unless forloop.first %}
           {% assign prevurl = prev.url %}
         {% endunless %}
@@ -91,6 +92,15 @@ layout: default
         <a href="{{prevurl | prepend: site.baseurl }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{prevurl}}</a>
         {% endif %}
       </div>
+
+      <!-- HOME BUTTON -->
+      <div class="col-2">
+        <!-- URL IF HOSTING ON GITHUB PAGES -->
+        <!-- <a href="{{ site.baseurl }}" class="home"><i class="nav-icons fa fa-home center"> </i> </a> -->
+        <!-- URL IF BUILDING LOCALLY -->
+        <a href="http://127.0.0.1:4000/myportfolio/" class="home"><i class="nav-icons fa fa-home center"> </i> </a>
+      </div>
+
       <div class="col-5 right">
         {% if nexturl %}
         <a href="{{nexturl | prepend: site.baseurl }}" class="nxt">{{nexturl}} <i class="nav-icons fa fa-caret-right"> </i> </a>

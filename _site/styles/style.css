@@ -1,8 +1,8 @@
 /* CLASSES FOR TESTING */
 
-/* div {
+div {
   border: 1px solid yellow;
-} */
+}
 
 /* CSS RESET */
 
@@ -107,6 +107,10 @@ h1::first-letter {
 
 .featured  h1::first-letter {
 	color: #f2f2f2;
+}
+
+h3 {
+  text-transform: capitalize;
 }
 
 .center {
@@ -497,6 +501,17 @@ a {
   font-weight: bold;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 1rem;
+  align-items: center;
+  font-size: 2em;
+}
+
 .fa-caret-left {
   font-size: 2rem;
 }
@@ -608,7 +623,6 @@ li .fa {
   margin: 0 1rem;
   border-radius: 50%;
   text-align: center;
-  margin-right: 0.25em;
 }
 
 .fa-linkedin {
@@ -619,6 +633,12 @@ li .fa {
   height: 2.3em;
   width: 2.3em;
   padding-top: 0.7rem;
+}
+
+.fa-linkedin:hover {
+  background-color: #f2f2f2;
+  color: #8cc2db;
+  cursor: pointer;
 }
 
 /* PDF DOWNLOAD */
