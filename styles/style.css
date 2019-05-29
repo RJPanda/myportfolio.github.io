@@ -1,8 +1,8 @@
 /* CLASSES FOR TESTING */
 
-div {
+/* div {
   border: 1px solid yellow;
-}
+} */
 
 /* CSS RESET */
 
@@ -93,6 +93,7 @@ h1 {
   margin-top: -.45em;
   padding-right: 0.1em;
   padding-top: 1px;
+  padding-bottom: 0.5rem;
   font-size: 8vh; line-height: 1;
   margin: 0;
 }
@@ -311,6 +312,13 @@ a {
   margin-bottom: 1rem;
 }
 
+.about-columns {
+  min-width: 100%;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
 /* RESUME */
 
 .title h1 {
@@ -464,8 +472,6 @@ a {
 
 .my-work-text h1 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 8vh;
 }
 
 .my-work-text h3 {
@@ -524,6 +530,31 @@ a {
 }
 
 /* CONTACT FORM */
+
+.text-link {
+  padding-bottom: 0.5rem;
+}
+
+.text-link a {
+  background:
+     linear-gradient(
+       to bottom, #8cc2db 0%,
+       #8cc2db 100%
+     );
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 0px 0px;
+  text-decoration: none;
+  transition: background-size 1.5s;
+}
+
+.text-link a:hover {
+  background-size: 4px 50px;
+  -webkit-transition: 2s; /* Safari */
+  -webkit-transition-timing-function: linear; /* Safari */
+  transition: 1s;
+  transition-timing-function: linear;
+}
 
 input,
 textarea {
@@ -602,6 +633,10 @@ form [class*=col-] {
   background-color: #f2f2f2;
   color: #8cc2db;
   cursor: pointer;
+  -webkit-transition: 2s; /* Safari */
+  -webkit-transition-timing-function: linear; /* Safari */
+  transition: 0.5s;
+  transition-timing-function: linear;
 }
 
 /* LINKEDIN */
@@ -639,6 +674,10 @@ li .fa {
   background-color: #f2f2f2;
   color: #8cc2db;
   cursor: pointer;
+  -webkit-transition: 2s; /* Safari */
+  -webkit-transition-timing-function: linear; /* Safari */
+  transition: 0.5s;
+  transition-timing-function: linear;
 }
 
 /* PDF DOWNLOAD */
