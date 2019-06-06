@@ -89,37 +89,28 @@ layout: default
 
 <hr>
 
-<div class="grid">
-  <div class="grid-spaceBetween col-12 work-nav">
-    <div class="col-5">
-      {% if prevurl %}
-      <a href="{{prevurl | prepend: site.baseurl }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{prevurl}}</a>
-      {% endif %}
-    </div>
+  <div class="grid">
+    <div class="grid-spaceBetween col-12 work-nav">
+      <div class="col-5">
+        {% if prevurl %}
+        <a href="{{prevurl | prepend: site.baseurl }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{prevurl}}</a>
+        {% endif %}
+      </div>
 
-    <!-- HOME BUTTON -->
-    <div class="col-2">
-      <!-- URL IF HOSTING ON GITHUB PAGES -->
-      <!-- <a href="{{ site.baseurl }}" class="home"><i class="nav-icons fa fa-home center"> </i> </a> -->
-      <!-- URL IF BUILDING LOCALLY -->
-      <a href="http://127.0.0.1:4000/myportfolio/" class="home"><i class="nav-icons fa fa-home center"> </i> </a>
-    </div>
+      <!-- HOME BUTTON -->
+      <div class="col-2 middle">
+        <!-- URL IF HOSTING ON GITHUB PAGES -->
+        <!-- <a href="{{ site.baseurl }}" class="home"><i class="nav-icons fa fa-home center"> </i> </a> -->
+        <!-- URL IF BUILDING LOCALLY -->
+        <a href="http://127.0.0.1:4000/myportfolio/#my-work" class="home"><i class="fa fa-th"> </i> </a>
+        <a href="http://127.0.0.1:4000/myportfolio/" class="home"><i class="fa fa-home"> </i> </a>
+      </div>
 
-    <div class="col-5 right">
-      {% if nexturl %}
-      <a href="{{nexturl | prepend: site.baseurl }}" class="nxt">{{nexturl}} <i class="nav-icons fa fa-caret-right"> </i> </a>
-      {% endif %}
+      <div class="col-5 right">
+        {% if nexturl %}
+        <a href="{{nexturl | prepend: site.baseurl }}" class="nxt">{{nexturl}} <i class="nav-icons fa fa-caret-right"> </i> </a>
+        {% endif %}
+      </div>
     </div>
   </div>
-</div>
-
-
-
-<div>
-
-<a href="{{ page.image_path }}"><img src="{{ page.image_path }}"></a>
-
-{% include lightbox.html %}
-
-</div>
 </section>
