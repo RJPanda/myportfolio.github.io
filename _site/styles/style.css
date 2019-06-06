@@ -443,7 +443,7 @@ a {
 }
 
 .block-text:hover{
-  background-color: rgba(46, 17, 45, 0.6);
+  background-color: rgba(48, 52, 63, 0.4);
   -webkit-transition: .5s;
   transition: .5s;
 }
