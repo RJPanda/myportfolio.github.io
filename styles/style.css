@@ -207,11 +207,16 @@ a {
 
 
 /* DOWN ARROW ANIMATION */
+
+.my-logo {
+
+}
+
 .down-arrow {
   position: relative;
   font-size: 2rem;
   text-align: center;
-  /* color: #ec1c24;   /* MY LOGO RED */ */
+  color: #ec1c24;   /* MY LOGO RED */
   animation: bounce 2.5s infinite;
 }
 
