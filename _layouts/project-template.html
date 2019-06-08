@@ -93,14 +93,14 @@ layout: default
     <div class="grid-spaceBetween col-12 work-nav">
       <div class="col-5">
         {% if prevurl %}
-        <a href="{{prevurl | prepend: site.baseurl }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{prevurl}}</a>
+        <a href="{{prevurl | prepend: site.url }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{prevurl}}</a>
         {% endif %}
       </div>
 
       <!-- HOME BUTTON -->
       <div class="col-2 middle">
         <!-- URL IF HOSTING ON GITHUB PAGES -->
-        <!-- <a href="{{ site.baseurl }}" class="home"><i class="nav-icons fa fa-home center"> </i> </a> -->
+        <!-- <a href="{{ site.url }}" class="home"><i class="nav-icons fa fa-home center"> </i> </a> -->
         <!-- URL IF BUILDING LOCALLY -->
         <a href="http://127.0.0.1:4000/myportfolio/#my-work" class="home"><i class="fa fa-th"> </i> </a>
         <a href="http://127.0.0.1:4000/myportfolio/" class="home"><i class="fa fa-home"> </i> </a>
@@ -108,7 +108,7 @@ layout: default
 
       <div class="col-5 right">
         {% if nexturl %}
-        <a href="{{nexturl | prepend: site.baseurl }}" class="nxt">{{nexturl}} <i class="nav-icons fa fa-caret-right"> </i> </a>
+        <a href="{{nexturl | prepend: site.url }}" class="nxt">{{nexturl}} <i class="nav-icons fa fa-caret-right"> </i> </a>
         {% endif %}
       </div>
     </div>
