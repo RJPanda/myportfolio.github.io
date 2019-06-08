@@ -2,8 +2,8 @@
 title: KM Portfolio
 email: katherine.molloy@gmail.com
 description: Portfolio site May 2019
-# baseurl: "/myportfolio" #http://127.0.0.1:4000/myportfolio/ LOCALLY A
-url: "http://katherinemolloy.com.au"
+baseurl: "katherinemolloy.com.au" #http://127.0.0.1:4000/myportfolio/ LOCALLY A
+# url: "http://katherinemolloy.com.au"
 github_username:  rjpanda
 
 
