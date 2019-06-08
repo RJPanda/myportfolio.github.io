@@ -208,8 +208,13 @@ a {
 
 /* DOWN ARROW ANIMATION */
 
-.my-logo {
+.logo-container {
 
+}
+
+.my-logo {
+ width: 3vw;
+ height: 3vw;
 }
 
 .down-arrow {
