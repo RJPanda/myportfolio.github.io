@@ -1,15 +1,14 @@
 /* CLASSES FOR TESTING */
 
-/* div {
+div {
   border: 1px solid yellow;
-} */
+}
 
 /* CSS RESET */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* SECTION UNIVERSAL */
@@ -47,22 +46,13 @@ section, #mywork-pages {
 /* FONTS AND TEXT */
 
 :root {
-  font-size: 1rem;
+  font-size: 1.16vw;
 }
 
 body {
   font-family: 'Open Sans','Work Sans','Roboto', sans-serif;
   font-weight: 400;
   color: #333; /*WARM MEDIUM GREY */
-}
-
-p {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  vertical-align: baseline;
-  font: inherit;
-  margin-bottom: 1.1rem;
 }
 
 @font-face {
@@ -80,8 +70,23 @@ h1 {
   padding-right: 0.1em;
   padding-top: 1px;
   padding-bottom: 0.5rem;
-  font-size: 8vh; line-height: 1;
+  font-size: 4vw; line-height: 1;
   margin: 0;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 1.5vw;
+}
+
+p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font: inherit;
+  margin-bottom: 1.1rem;
+  font-size: 1.16vw;
 }
 
 h1::first-letter {
@@ -96,11 +101,13 @@ h1::first-letter {
 	color: #f2f2f2;
 }
 
-h3 {
-  text-transform: capitalize;
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.center {
+.text-center {
   text-align: center;
 }
 
@@ -139,7 +146,9 @@ a {
  padding: none;
  }
 
- li  { font-size: 1.1rem; }
+ li  {
+  font-size: 1.5vw;
+}
 
 /* IMAGES */
 
@@ -279,19 +288,7 @@ a {
 /* ABOUT ME */
 
 #about img {
- border-radius: 0% 0% 10% 0% / 0% 0% 10% 0%;
-}
-
-.end {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0px; /* END - MAKES THE ROUNDED CORNERS WORK ON PORTRAIT */
-}
-
-.end img {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0px;
+  border-radius: 0% 0% 10% 0% / 0% 0% 10% 0%;
 }
 
 #skills {
@@ -374,8 +371,11 @@ a {
 
 .project-block {
   background-size: contain;
-  padding: 0 1rem;
+  padding: 0 0.5em;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  border: 0.1px solid rgba(0,0,0,0.15);
 }
+
 .project-block p {
   text-align: justify;
 }
@@ -450,18 +450,22 @@ a {
 }
 
 #caption {
-  text-align: left;
+  text-align: center;
   padding-top: 0.5rem;
+  position: relative;
 }
 
 #caption .fa {
   color: #E5E4E4; /*WARM LIGHT GREY */
-  height: 1.5em;
-  width: 1.5em;
-  padding-top: 0.25rem;
+  height: 3rem;
+  width: 3rem;
+  padding-top: 0.5rem;
  -webkit-transition: color 1000ms linear;
   -ms-transition: color 1000ms linear;
   transition: color 1000ms linear;
+  position: absolute;
+  bottom: -75%;
+  left: 40%;
 }
 
 #caption:hover .fa {
@@ -469,7 +473,7 @@ a {
   cursor: pointer;
 }
 
-#caption h3 {
+#caption p {
   opacity: 0;
   display: inline-block;
   -webkit-transition: opacity 1s ease-in-out;
@@ -478,10 +482,12 @@ a {
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   opacity: 0;
-  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #4D4D4D;   /* #333 lightened by 10% */
 }
 
-#caption:hover h3 {
+#caption:hover p {
    opacity: 1;
 }
 
@@ -739,4 +745,58 @@ a[download]::before {
 
 .copyright-text span {
   font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile-Portrait */
+@media (max-width: 479.98px) {
+  body {
+    background-color: teal;
+  }
+.about-columns {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  }
+
+}
+
+/* Mobile-landscape (and larger) */
+@media (min-width: 480px) {
+  body {
+    background-color: blue;
+  }
+.about-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  }
+
+}
+
+/* Tablet-portrait (and larger) */
+@media (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+.about-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  }
+}
+
+/* Tablet-landscape (and larger) */
+@media (min-width: 992px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/* Laptops (and larger) */
+@media (min-width: 1200px) {
+  body {
+    background-color: red;
+  }
 }

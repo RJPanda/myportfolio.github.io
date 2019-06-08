@@ -11,44 +11,46 @@
     </div>
 
     {% include lightbox.html %}
-    <div class="grid-noMargin col-9">
+    <div class="grid col-9">
 
         {% for item in site.mywork %}
-          <div class="col-4_xs-12 project-block">
-            <a href="{{ item.image_path }}"><img src="{{ page.image_path }}">
-              <div class="block-image"
-              {% if item.animation-path != '' %}
-               style="background-image: url('{{ item.image_path }}{{item.animation-path}}');"
-              {% endif %}>
-                {% if item.animation-id %}
-                  <div class="block-animation" id="{{ item.animation-id }}">
-                    <script type="text/javascript">
-                      var animation_{{ item.animation-id }} = bodymovin.loadAnimation({
-                        container: document.getElementById('{{ item.animation-id }}'),
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: '{{ item.animation-path }}'
-                      });
-                    </script>
+          <div class="col-4">
+            <div class="project-block">
+
+              <a href="{{ item.image_path }}"><img src="{{ page.image_path }}">
+                <div class="block-image"
+                {% if item.animation-path != '' %}
+                 style="background-image: url('{{ item.image_path }}{{item.animation-path}}');"
+                {% endif %}>
+                  {% if item.animation-id %}
+                    <div class="block-animation" id="{{ item.animation-id }}">
+                      <script type="text/javascript">
+                        var animation_{{ item.animation-id }} = bodymovin.loadAnimation({
+                          container: document.getElementById('{{ item.animation-id }}'),
+                          renderer: 'svg',
+                          loop: true,
+                          autoplay: true,
+                          path: '{{ item.animation-path }}'
+                        });
+                      </script>
+                    </div>
+                  {% endif %}
+
+                  <div class="block-text">
+                    <!-- <h3>{{ item.title }}</h3> -->
+                    <i class="fa fa-search-plus"></i>
                   </div>
-                {% endif %}
 
-                <div class="block-text">
-                  <!-- <h3>{{ item.title }}</h3> -->
-                  <i class="fa fa-search-plus"></i>
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="{{ item.url | prepend: site.baseurl }}">
-                <i class="fa fa-info"></i>
-                <h3>{{ item.title }}</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="{{ item.url | prepend: site.baseurl }}">
+                  <i class="fa fa-info-circle"></i>
+                  <p>{{ item.title }}: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         {% endfor %}
          <!-- DO NOT MOVE THIS, IT WILL BREAK THE GRID -->

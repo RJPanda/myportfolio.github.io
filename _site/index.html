@@ -29,7 +29,6 @@
   <meta name="og:site_name" content="<www.katherinemolloy.com.au">
 
 <!-- EXTERNAL CSS STYLESHEETS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
 <!-- FONTS -->
   <!-- BANNER -->
@@ -43,6 +42,7 @@
 
 <!-- CUSTOM STYLESHEETS -->
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/gridlex.css">
 
 <!-- Logo icon link -->
   <link rel="shortcut icon" href="./assets/images/logo_icon.ico" type="image/x-icon"/>
@@ -67,24 +67,28 @@
 
 <section id="about">
 
-  <div class="grid"> <!-- START GRID -->
+  <div class="grid center "> <!-- START GRID -->
 
-    <div class="grid col-3"> <!-- START COL-3 -->
-      <div class="col-12 box-image end"> <!-- START PROFILE PICTURE -->
+    <div class="grid col-3_xs-6_sm-5"> <!-- START COL-3 -->
+      <div class="col-12"> <!-- START PROFILE PICTURE -->
         <img class="col-12" src="./assets/images/portrait.jpg" />
-        <h1> about </h1>
+        <h1 class="text-center"> about </h1>
       </div> <!-- END PROFILE PICTURE -->
     </div> <!-- END COL-3 -->
 
 
-    <div class="col-1 grid-noGutter line-center"> <!-- START COL-1 -->
+    <div class="col-1 grid-noGutter_sm-hidden line-center"> <!-- START COL-1 -->
       <div class="col-12"></div>
     </div> <!-- END COL-1 -->
 
 
-    <div class="col-8"> <!-- START COL-1 -->
+    <div class="col-8_xs-12_sm-12"> <!-- START COL-1 -->
 
-      <div class="col-12" id="skills"> <!-- START ANIMATION -->
+      <div class="col-12 about-columns"> <!-- START PARAGRAPHS -->
+        <p> Hello there, I’m Katherine, I’m a visual designer. My style is clean and thoughtful, I am a person who strives to deliver clever design, using thoughtful work practices. Helping people express and communicate complex concepts is my passion. At home I love cooking, gaming and constantly filling my head with a very broad range of knowledge (particularly history, comedy and science). </p>
+      </div> <!-- END PARAGRAPHS -->
+
+      <div id="skills"> <!-- START ANIMATION -->
         <script>
           lottie.loadAnimation({
             container: skills, // the dom element that will contain the animation
@@ -95,10 +99,6 @@
           });
         </script>
       </div> <!-- END ANIMATION -->
-
-      <div class="col-12 about-columns"> <!-- START PARAGRAPHS -->
-        <p> Hello there, I’m Katherine, I’m a visual designer. My style is clean and thoughtful, I am a person who strives to deliver clever design, using thoughtful work practices. Helping people express and communicate complex concepts is my passion. At home I love cooking, gaming and constantly filling my head with a very broad range of knowledge (particularly history, comedy and science). </p>
-      </div> <!-- END PARAGRAPHS -->
 
     </div> <!-- END COL-1 -->
 
@@ -573,139 +573,151 @@ mySwipeIt.on('swipeLeft',function(e){
 
 </script>
 
-    <div class="grid-noMargin col-9">
+    <div class="grid col-9">
 
         
-          <div class="col-4_xs-12 project-block">
-            <a href="./assets/images/Instagram-display.jpg"><img src="" />
-              <div class="block-image" style="background-image: url('./assets/images/Instagram-display.jpg./assets/animations/data.json');">
-                
+          <div class="col-4">
+            <div class="project-block">
 
-                <div class="block-text">
-                  <!-- <h3>be there beauty</h3> -->
-                  <i class="fa fa-search-plus"></i>
+              <a href="./assets/images/Instagram-display.jpg"><img src="" />
+                <div class="block-image" style="background-image: url('./assets/images/Instagram-display.jpg./assets/animations/data.json');">
+                  
+
+                  <div class="block-text">
+                    <!-- <h3>be there beauty</h3> -->
+                    <i class="fa fa-search-plus"></i>
+                  </div>
+
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="/myportfolio/be-there-beauty">
-                <i class="fa fa-info"></i>
-                <h3>be there beauty</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="/myportfolio/be-there-beauty">
+                  <i class="fa fa-info-circle"></i>
+                  <p>be there beauty: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         
-          <div class="col-4_xs-12 project-block">
-            <a href="./assets/images/bottle-beer-scene.jpg"><img src="" />
-              <div class="block-image" style="background-image: url('./assets/images/bottle-beer-scene.jpg');">
-                
+          <div class="col-4">
+            <div class="project-block">
 
-                <div class="block-text">
-                  <!-- <h3>beer bottle</h3> -->
-                  <i class="fa fa-search-plus"></i>
+              <a href="./assets/images/bottle-beer-scene.jpg"><img src="" />
+                <div class="block-image" style="background-image: url('./assets/images/bottle-beer-scene.jpg');">
+                  
+
+                  <div class="block-text">
+                    <!-- <h3>beer bottle</h3> -->
+                    <i class="fa fa-search-plus"></i>
+                  </div>
+
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="/myportfolio/beer-bottle">
-                <i class="fa fa-info"></i>
-                <h3>beer bottle</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="/myportfolio/beer-bottle">
+                  <i class="fa fa-info-circle"></i>
+                  <p>beer bottle: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         
-          <div class="col-4_xs-12 project-block">
-            <a href="./assets/images/ferry-map.jpg"><img src="" />
-              <div class="block-image" style="background-image: url('./assets/images/ferry-map.jpg');">
-                
+          <div class="col-4">
+            <div class="project-block">
 
-                <div class="block-text">
-                  <!-- <h3>ferry map</h3> -->
-                  <i class="fa fa-search-plus"></i>
+              <a href="./assets/images/ferry-map.jpg"><img src="" />
+                <div class="block-image" style="background-image: url('./assets/images/ferry-map.jpg');">
+                  
+
+                  <div class="block-text">
+                    <!-- <h3>ferry map</h3> -->
+                    <i class="fa fa-search-plus"></i>
+                  </div>
+
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="/myportfolio/ferry-map">
-                <i class="fa fa-info"></i>
-                <h3>ferry map</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="/myportfolio/ferry-map">
+                  <i class="fa fa-info-circle"></i>
+                  <p>ferry map: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         
-          <div class="col-4_xs-12 project-block">
-            <a href="./assets/images/taylor-covers.jpg"><img src="" />
-              <div class="block-image" style="background-image: url('./assets/images/taylor-covers.jpg');">
-                
+          <div class="col-4">
+            <div class="project-block">
 
-                <div class="block-text">
-                  <!-- <h3>taylor magazine</h3> -->
-                  <i class="fa fa-search-plus"></i>
+              <a href="./assets/images/taylor-covers.jpg"><img src="" />
+                <div class="block-image" style="background-image: url('./assets/images/taylor-covers.jpg');">
+                  
+
+                  <div class="block-text">
+                    <!-- <h3>taylor magazine</h3> -->
+                    <i class="fa fa-search-plus"></i>
+                  </div>
+
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="/myportfolio/taylor-magazine">
-                <i class="fa fa-info"></i>
-                <h3>taylor magazine</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="/myportfolio/taylor-magazine">
+                  <i class="fa fa-info-circle"></i>
+                  <p>taylor magazine: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         
-          <div class="col-4_xs-12 project-block">
-            <a href="./assets/images/pure-packaging.jpg"><img src="" />
-              <div class="block-image" style="background-image: url('./assets/images/pure-packaging.jpg');">
-                
+          <div class="col-4">
+            <div class="project-block">
 
-                <div class="block-text">
-                  <!-- <h3>vera's formula</h3> -->
-                  <i class="fa fa-search-plus"></i>
+              <a href="./assets/images/pure-packaging.jpg"><img src="" />
+                <div class="block-image" style="background-image: url('./assets/images/pure-packaging.jpg');">
+                  
+
+                  <div class="block-text">
+                    <!-- <h3>vera's formula</h3> -->
+                    <i class="fa fa-search-plus"></i>
+                  </div>
+
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="/myportfolio/veras-formula">
-                <i class="fa fa-info"></i>
-                <h3>vera's formula</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="/myportfolio/veras-formula">
+                  <i class="fa fa-info-circle"></i>
+                  <p>vera's formula: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         
-          <div class="col-4_xs-12 project-block">
-            <a href="./assets/images/western-map.jpg"><img src="" />
-              <div class="block-image" style="background-image: url('./assets/images/western-map.jpg');">
-                
+          <div class="col-4">
+            <div class="project-block">
 
-                <div class="block-text">
-                  <!-- <h3>western map</h3> -->
-                  <i class="fa fa-search-plus"></i>
+              <a href="./assets/images/western-map.jpg"><img src="" />
+                <div class="block-image" style="background-image: url('./assets/images/western-map.jpg');">
+                  
+
+                  <div class="block-text">
+                    <!-- <h3>western map</h3> -->
+                    <i class="fa fa-search-plus"></i>
+                  </div>
+
                 </div>
-
-              </div>
-            </a>
-
-            <div id="caption">
-              <a href="/myportfolio/western-map">
-                <i class="fa fa-info"></i>
-                <h3>western map</h3>
               </a>
-            </div>
 
+              <div id="caption">
+                <a href="/myportfolio/western-map">
+                  <i class="fa fa-info-circle"></i>
+                  <p>western map: project page</p>
+                </a>
+              </div>
+            </div> <!-- END PROJECT BLOCK -->
           </div>
         
          <!-- DO NOT MOVE THIS, IT WILL BREAK THE GRID -->
@@ -718,7 +730,7 @@ mySwipeIt.on('swipeLeft',function(e){
 
 <!-- START - COLOUM WITH HEADING -->
     <div class="col-4 grid-noGutter right">
-      <div class="col-12-noGutter">
+      <div class="col-12-noGutter xs-hidden">
         <h1> connect </h1>
         <div class="col-12-noGutter-noBottom">
             <ul class="col-12-noGutter">
@@ -771,7 +783,7 @@ mySwipeIt.on('swipeLeft',function(e){
                  <p> Open in Browser </p></a>
            </div>
           </div>
-      
+
        </div>   <!-- COL-9 END -->
 
     </div> <!-- COL-4 END -->
