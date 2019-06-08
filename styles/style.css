@@ -272,6 +272,9 @@ a {
   padding: 0;
 }
 
+.title h1::first-letter {
+	color: #f2f2f2;
+
 .title h2 {
   font-family: 'silkaregular';
   margin-top: 2rem;
@@ -313,6 +316,16 @@ a {
   min-height: 3em;
   border-radius: 90%;
   text-align: center;
+}
+
+.icons:hover {
+	animation: jiggle 0.2s infinite;
+	-webkit-animation: jiggle 0.2s infinite;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: jiggle;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
 }
 
 .icons:before {
