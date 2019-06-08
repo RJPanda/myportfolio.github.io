@@ -749,7 +749,7 @@ a[download]::before {
 
 /* MEDIA QUERIES */
 
-/* Mobile-Portrait */
+/* <xs - Mobile-Portrait */
 @media (max-width: 479.98px) {
 
   body {
@@ -766,6 +766,11 @@ a[download]::before {
   padding: 5vh 5vw;
   }
 
+  #my-work p {
+  font-size: 4.16vw;
+  display: inline-block;
+  }
+
   p {
   font-size: 4.16vw;
   text-align: left;
@@ -788,7 +793,7 @@ a[download]::before {
 
 }
 
-/* Mobile-landscape */
+/* xs-sm - Mobile-landscape */
 @media (min-width: 480px) and (max-width: 767.98px) {
   body {
     background-color: blue;
@@ -805,6 +810,12 @@ a[download]::before {
   font-size: 4.16vw;
   text-align: left;
   }
+
+  #my-work p {
+  font-size: 2.5vw;
+  display: inline-block;
+  }
+
   h1 {
   font-size: 8vw;
   text-align: center;
@@ -822,7 +833,7 @@ a[download]::before {
 
 }
 
-/* Tablet-portrait */
+/* sm-md - Tablet-portrait */
 @media (min-width: 768px) and (max-width: 991.98px)  {
   body {
     background-color: green;
@@ -844,7 +855,7 @@ a[download]::before {
 
 }
 
-/* Tablet-landscape */
+/* md-lg - Tablet-landscape */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   body {
     background-color: purple;
@@ -860,12 +871,16 @@ a[download]::before {
   p {
   font-size: 2vw;
   }
+  #my-work p {
+  font-size: 1.16vw;
+  display: inline-block;
+  }
   h1 {
   font-size: 4vw;
   }
 }
 
-/* Laptops (and larger) */
+/* lg< - Laptops (and larger) */
 @media (min-width: 1200px) {
   body {
     background-color: red;
