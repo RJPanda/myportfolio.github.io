@@ -457,15 +457,17 @@ a {
 
 #caption .fa {
   color: #E5E4E4; /*WARM LIGHT GREY */
-  height: 3rem;
-  width: 3rem;
+  height: 100%;
+  width: 100%;
   padding-top: 0.5rem;
+  font-size: 2rem;
  -webkit-transition: color 1000ms linear;
   -ms-transition: color 1000ms linear;
   transition: color 1000ms linear;
   position: absolute;
-  bottom: -75%;
-  left: 40%;
+  bottom: -65%;
+  margin-left: -50%;
+  left: 50%;
 }
 
 #caption:hover .fa {
@@ -694,6 +696,7 @@ form [class*=col-] {
   display: inline-block;
   background-color: #8cc2db;
   text-align: center;
+  border: 1.5px solid #8cc2db; /* LIGHT BLUE */
 }
 
 .line-button-left:before {
@@ -751,46 +754,54 @@ a[download]::before {
 
 /* <xs - Mobile-Portrait */
 @media (max-width: 479.98px) {
-
   body {
     background-color: teal;
   }
-
   .about-columns {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
   }
-
-  #about, #resume {
-  padding: 5vh 5vw;
+  #about, #resume, #contact {
+    padding: 5vh 5vw;
   }
-
-  #my-work p {
-  font-size: 4.16vw;
-  display: inline-block;
+  #my-work, #contact, p, li {
+    font-size: 3.16vw;
+    display: inline-block;
   }
-
+  #my-work .fa {
+    font-size: 6rem;
+  }
   p {
-  font-size: 4.16vw;
-  text-align: left;
+    font-size: 3.16vw;
+    text-align: left;
   }
-
   h1 {
-  font-size: 8vw;
-  text-align: center;
+    font-size: 8vw;
+    text-align: center;
   }
-
+  #contact h1::first-letter {
+  	color: #8cc2db;
+  }
+  #contact .right {
+    text-align: center;
+  }
+  #contact .form-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    font-size: 3.16vw;
+  }
   .heading {
-  font-size: 5vw;
-  text-align: left;
+    font-size: 5vw;
+    text-align: left;
   }
-
   .title h2 {
-  font-size: 8vw;
-  text-align: left;
+    font-size: 8vw;
+    text-align: left;
   }
-
 }
 
 /* xs-sm - Mobile-landscape */
@@ -798,39 +809,57 @@ a[download]::before {
   body {
     background-color: blue;
   }
-.about-columns {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  column-count: 1;
+  .about-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
   }
-  #about, #resume {
-  padding: 5vh 7vw;
+  #about, #resume, #contact {
+    padding: 5vh 7vw;
   }
   p {
-  font-size: 4.16vw;
-  text-align: left;
+    font-size: 4.16vw;
+    text-align: left;
   }
-
-  #my-work p {
-  font-size: 2.5vw;
-  display: inline-block;
+  #my-work, #contact, p, li {
+    font-size: 2.5vw;
+    display: inline-block;
   }
-
+  #my-work .fa {
+    font-size: 4rem;
+  }
+  #contact .fa, .fab, .fas {
+    font-size: 4vw;
+    padding: 1rem 0rem;
+  }
   h1 {
-  font-size: 8vw;
-  text-align: center;
+    font-size: 8vw;
+    text-align: center;
+  }
+  #contact h1::first-letter {
+  	color: #8cc2db;
+  }
+  #contact .right {
+    text-align: center;
   }
 
+  #contact .form-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    font-size: 2.5vw;
+  }
   .heading {
-  font-size: 5vw;
-  text-align: left;
+    font-size: 5vw;
+    text-align: left;
   }
-
   .title h2 {
-  font-size: 8vw;
-  text-align: left;
+    font-size: 8vw;
+    text-align: left;
   }
-
 }
 
 /* sm-md - Tablet-portrait */
@@ -838,45 +867,63 @@ a[download]::before {
   body {
     background-color: green;
   }
-.about-columns {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  column-count: 1;
+  .about-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
   }
-  #about, #resume {
-  padding: 5vh 7vw;
-  }
-  p {
-  font-size: 2vw;
-  }
-  h1 {
-  font-size: 4vw;
+  #about, #resume, #contact {
+    padding: 5vh 7vw;
   }
 
+  #contact, p, li {
+    font-size: 2vw;
+  }
+
+  #my-work .fa {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  #contact h1::first-letter {
+  	color: #8cc2db;
+  }
+
+  #contact .fa, .fab, .fas {
+    font-size: 3vw;
+    padding: 1rem 0rem;
+  }
 }
 
 /* md-lg - Tablet-landscape */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   body {
     background-color: purple;
-}
+  }
   .about-columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
     }
   #about, #resume {
-  padding: 5vh 7vw;
+    padding: 5vh 7vw;
   }
-  p {
-  font-size: 2vw;
+  #contact p {
+    font-size: 1.16vw;
   }
   #my-work p {
-  font-size: 1.16vw;
-  display: inline-block;
+    font-size: 1.16vw;
+    display: inline-block;
   }
+
   h1 {
-  font-size: 4vw;
+    font-size: 4vw;
+  }
+  #contact h1::first-letter {
+  	color: #8cc2db;
   }
 }
 
@@ -885,13 +932,15 @@ a[download]::before {
   body {
     background-color: red;
   }
-.about-columns {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
+  .about-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
   p {
-  font-size: 1.16vw;
+    font-size: 1.16vw;
   }
-
+  #contact h1::first-letter {
+  	color: #8cc2db;
+  }
 }
