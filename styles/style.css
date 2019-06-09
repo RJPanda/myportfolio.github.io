@@ -277,9 +277,8 @@ a {
 
 .spin:hover .fa .fab .fal {
   animation-name: spin;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 2s;
+  animation: spin 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes spin {
