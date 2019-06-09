@@ -306,7 +306,7 @@ a {
   vertical-align: middle;
 }
 
-.icons:hover i {
+.icons i:hover {
   color: red;
 }
 
