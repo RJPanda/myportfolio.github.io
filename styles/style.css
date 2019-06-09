@@ -279,15 +279,13 @@ a {
     -webkit-transition: 0.6s ease-out;
     -moz-transition:  0.6s ease-out;
     transition:  0.6s ease-out;
-
-  &:hover {
-    .turn {
+}
+.turn:hover {
       -webkit-transform: rotateZ(720deg);
       -moz-transform: rotateZ(720deg);
       transform: rotateZ(720deg);
-    }
+  
   }
-}
 
 
 .icons {
