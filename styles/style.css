@@ -316,10 +316,13 @@ a {
   min-height: 3em;
   border-radius: 90%;
   text-align: center;
-  animation: jiggle;  
 }
 
-.icons:hover {
+.jiggle {
+    animation: jiggle;
+}
+
+.jiggle:hover {
 	animation: jiggle 0.2s infinite;
 	-webkit-animation: jiggle 0.2s infinite;
     -moz-animation-duration: 0.2s;
