@@ -308,6 +308,11 @@ a {
 
 .icons i:hover {
   color: red;
+  -webkit-transform: rotate(360deg); /* WebKit */
+  -moz-transform: rotate(360deg); /* Mozilla */
+  -o-transform: rotate(360deg); /* Opera */
+  -ms-transform: rotate(360deg); /* Internet Explorer */
+  transform: rotate(360deg); /* CSS3 */
 }
 
 /*-- gallery-grid --------------------------------------------*/
@@ -529,7 +534,7 @@ a {
   padding-top: 0.5rem;
 }
 
-.lighten a:hover {
+.lighten i:hover, a:hover {
   color: #ccc;
 }
 
