@@ -209,15 +209,12 @@ a {
 /* DOWN ARROW ANIMATION */
 
 .logo-container {
+
 }
 
 .my-logo {
- width: 3rem;
- height: auto;
-}
-
-.my-logo:hover {
- animation: bounce 2.5s x4;
+ width: 3vw;
+ height: 3vw;
 }
 
 .down-arrow {
@@ -540,7 +537,7 @@ a {
   display: flex;
   margin: 0;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0;
   color: #8cc2db;
   width: 100%;
   justify-content: space-between;

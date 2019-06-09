@@ -19,18 +19,18 @@
 
               <a href="{{ item.image_path }}"><img src="{{ page.image_path }}">
                 <div class="block-image"
-                {% if page.animation-path != '' %}
-                 style="background-image: url('{{ item.image_path }}{{page.animation-path}}');"
+                {% if item.animation-path != '' %}
+                 style="background-image: url('{{ item.image_path }}{{item.animation-path}}');"
                 {% endif %}>
                   {% if item.animation-id %}
-                    <div class="block-animation" id="{{ page.animation-id }}">
+                    <div class="block-animation" id="{{ item.animation-id }}">
                       <script type="text/javascript">
                         var animation_{{ item.animation-id }} = bodymovin.loadAnimation({
                           container: document.getElementById('{{ item.animation-id }}'),
                           renderer: 'svg',
                           loop: true,
                           autoplay: true,
-                          path: '{{ page.animation-path }}'
+                          path: '{{ item.animation-path }}'
                         });
                       </script>
                     </div>
