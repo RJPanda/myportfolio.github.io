@@ -275,6 +275,7 @@ a {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .turn:hover {
   -webkit-animation: spin 2s infinite linear;
   -moz-animation: spin 2s infinite linear;
@@ -313,6 +314,11 @@ color: #fff;
 -o-transition: all 0.8s;
 -ms-transition: all 0.8s;
 transition: all 0.8s;
+=======
+.spin:hover a, i, .fa, .fab, .fal {
+  animation: spin
+  transform: rotate(360deg);
+>>>>>>> parent of d14e3fe... Spinfix
 }
 
 .icons {
