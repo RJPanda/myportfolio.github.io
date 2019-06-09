@@ -275,8 +275,11 @@ a {
   justify-content: center;
 }
 
+.spin a, i, .fa, .fab, .fal {
+  transition: 2s;
+}
+
 .spin:hover a, i, .fa, .fab, .fal {
-  animation: spin
   transform: rotate(360deg);
 }
 
