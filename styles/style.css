@@ -306,6 +306,10 @@ a {
   vertical-align: middle;
 }
 
+.icons:hover i {
+  color: red;
+}
+
 /*-- gallery-grid --------------------------------------------*/
 
 .project-block {
@@ -523,11 +527,6 @@ a {
   justify-content: space-between;
   font-size: 2em;
   padding-top: 0.5rem;
-}
-
-.zoom a:hover .fa .fal .fab {
-  transform: scale(1.1);
-  transition: all ease 500ms;
 }
 
 .lighten a:hover {
