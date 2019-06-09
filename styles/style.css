@@ -213,35 +213,8 @@ a {
 }
 
 .my-logo {
- width: 3vw;
- height: 3vw;
-}
-
-.down-arrow {
-  position: relative;
-  font-size: 2rem;
-  text-align: center;
-  color: #ec1c24;   /* MY LOGO RED */
-  animation: bounce 2.5s infinite;
-}
-
-@-webkit-keyframes bounce {
-	0%,
-	25%,
-	50%,
-	75%,
-	100% {
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
-	}
-	40% {
-		-webkit-transform: translateY(-20px);
-		        transform: translateY(-20px);
-	}
-	60% {
-		-webkit-transform: translateY(-12px);
-		        transform: translateY(-12px);
-	}
+ width: 3rem;
+ height: auto;
 }
 
 /* ABOUT ME */
@@ -537,7 +510,7 @@ a {
   display: flex;
   margin: 0;
   text-align: center;
-  padding: 0;
+  padding: 0.5rem;
   color: #8cc2db;
   width: 100%;
   justify-content: space-between;
