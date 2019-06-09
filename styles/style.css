@@ -275,11 +275,11 @@ a {
   justify-content: center;
 }
 
-.jiggle:hover {
+.spin:hover {
   animation-name: spin;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 2s; 
+  animation-duration: 2s;
 }
 
 @keyframes spin {
@@ -550,6 +550,15 @@ a {
   justify-content: space-between;
   font-size: 2em;
   padding-top: 0.5rem;
+}
+
+.zoom a:hover {
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
+.lighten a:hover {
+  opacity: 0.5;
 }
 
 .middle {

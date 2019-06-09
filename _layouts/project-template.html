@@ -90,7 +90,7 @@ layout: default
 <hr>
 
   <div class="grid">
-    <div class="grid-spaceBetween col-12 work-nav">
+    <div class="grid-spaceBetween col-12 work-nav lighten">
       <div class="col-5">
         {% if prevurl %}
         <a href="{{ prevurl }}" class="prev"><i class="nav-icons fa fa-caret-left"></i>{{ prevurl }}</a>
@@ -98,7 +98,7 @@ layout: default
       </div>
 
       <!-- HOME BUTTON -->
-      <div class="col-2 middle">
+      <div class="col-2 middle zoom">
         <!-- URL IF HOSTING ON GITHUB PAGES -->
         <a href="{{ site.url }}" class="home"><i class="home fa fa-home"></i> </a>
         <a href="{{ site.url }}/#my-work" class="home"><i class="home fa fa-th"></i> </a>
@@ -109,7 +109,7 @@ layout: default
 
       </div>
 
-      <div class="col-5 right">
+      <div class="col-5 right lighten">
         {% if nexturl %}
         <a href="{{ nexturl }}" class="nxt"><i class="nav-icons fa fa-caret-right"></i>{{ nexturl }}</a>
         {% endif %}
