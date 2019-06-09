@@ -137,7 +137,7 @@ a {
   color: inherit;
 }
 
-.fa, .fas {
+.fa, .fas, .fal {
   font-size: 1.3em;
 }
 
@@ -282,6 +282,38 @@ a {
   animation: spin 2s infinite linear;
 }
 
+ul.icons {
+list-style: none;
+display: inline;
+margin-left:0;
+padding: 0;
+}
+
+ul.icons li {
+display: inline;
+margin: 0 5px;
+}
+
+.turn li a:hover i {
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-ms--transform: rotate(360deg);
+transform: rotate(360deg);
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+-o-transition: all 0.2s;
+-ms-transition: all 0.2s;
+transition: all 0.2s;
+}
+
+.turn i {
+color: #fff;
+-webkit-transition: all 0.8s;
+-moz-transition: all 0.8s;
+-o-transition: all 0.8s;
+-ms-transition: all 0.8s;
+transition: all 0.8s;
+}
 
 .icons {
   display: inline-block;
@@ -289,7 +321,7 @@ a {
   width: 3em;
   max-height: 3em;
   min-height: 3em;
-  border-radius: 90%;
+  border-radius: 50%;
   text-align: center;
 }
 
