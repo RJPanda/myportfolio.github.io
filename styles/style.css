@@ -281,10 +281,10 @@ a {
     transition:  0.6s ease-out;
 }
 .turn:hover {
-      -webkit-transform: rotateZ(720deg);
-      -moz-transform: rotateZ(720deg);
-      transform: rotateZ(720deg);
-  
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+
   }
 
 
