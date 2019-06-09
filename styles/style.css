@@ -89,7 +89,15 @@ p {
   font-size: 1.16vw;
 }
 
+h1::first-letter {
+	color: #8cc2db;
+}
+
 .featured h1 {
+	color: #f2f2f2;
+}
+
+.featured  h1::first-letter {
 	color: #f2f2f2;
 }
 
@@ -161,6 +169,12 @@ a {
   display: flex;
 }
 
+.box-image {
+  background-size:cover;
+  background-position: center;
+  min-height: 30vh;
+}
+
 /* HOME PAGE BANNER */
 
 .intro-banner {
@@ -196,6 +210,11 @@ a {
 
 .logo-container {
 
+}
+
+.my-logo {
+ width: 3rem;
+ height: auto;
 }
 
 /* ABOUT ME */
@@ -273,6 +292,14 @@ a {
   text-align: center;
 }
 
+.icons:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
 .icons i {
   margin: auto;
   text-align: center;
@@ -299,6 +326,9 @@ a {
 
 .project-block p {
   text-align: justify;
+}
+.project-block h2 {
+  padding-top: 1rem;
 }
 
 .block-image {
@@ -339,6 +369,12 @@ a {
 }
 
 /* H3 CURRENTLY HIDDEN ONLY FA SHOWING */
+.block-text h3 {
+  color:rgba(255,255,255,0);
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
 .block-text:hover{
   background-color: rgba(48, 52, 63, 0.4);
   -webkit-transition: .5s;
@@ -603,6 +639,17 @@ form [class*=col-] {
   max-height: 6rem;
 }
 
+.button-solid a {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  margin: 5%;
+  max-height: 6rem;
+}
+
 .button-solid:hover {
   background-color: #f2f2f2;
   color: #8cc2db;
@@ -631,13 +678,23 @@ form [class*=col-] {
   border: 1.5px solid #8cc2db; /* LIGHT BLUE */
 }
 
+.line-button-left:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
 .line-button-left i {
   margin: auto;
   text-align: center;
   vertical-align: middle;
 }
 
+
 /* LINKEDIN */
+
 
 .fab {
   display: inline-block;
