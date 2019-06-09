@@ -214,7 +214,7 @@ a {
 
 .my-logo {
  width: 3rem;
- height: auto;
+ height: 3rem;
 }
 
 /* ABOUT ME */
@@ -305,16 +305,6 @@ a {
   text-align: center;
   vertical-align: middle;
 }
-
-.icons i:hover {
-  color: red;
-  -webkit-transform: rotate(360deg); /* WebKit */
-  -moz-transform: rotate(360deg); /* Mozilla */
-  -o-transform: rotate(360deg); /* Opera */
-  -ms-transform: rotate(360deg); /* Internet Explorer */
-  transform: rotate(360deg); /* CSS3 */
-}
-
 /*-- gallery-grid --------------------------------------------*/
 
 .project-block {
