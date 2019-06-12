@@ -116,18 +116,16 @@ layout: default
 
       </div>
     </div>
-  </div>
+  </div> <!-- END GRID -->
 
 <div id="carousel" class="carousel slide" data-ride="carousel" pause="false">
   <div class="carousel-inner text-center">
   {% for news in page.carousel %}
-    <div class="item img-cover img-fixed {% if forloop.first %}active{% endif %}" style="background-image:url('{{ news.image }}')">
-      <h2>{{ news.text }}</h2>
+    <div class="item work-image {% if forloop.first %}active{% endif %}" style="background-image:url('{{ news.image }}')">
+      <h3>{{ news.text }}</h3>
     </div>
   {% endfor %}
-  
+  </div>
 </div>
-
-
 
 </section>
