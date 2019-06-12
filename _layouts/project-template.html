@@ -117,4 +117,17 @@ layout: default
       </div>
     </div>
   </div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel" pause="false">
+  <div class="carousel-inner text-center">
+  {% for news in page.carousel %}
+    <div class="item img-cover img-fixed {% if forloop.first %}active{% endif %}" style="background-image:url('{{ news.image }}')">
+      <h2>{{ news.text }}</h2>
+    </div>
+  {% endfor %}
+  
+</div>
+
+
+
 </section>
