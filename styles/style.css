@@ -172,7 +172,8 @@ a {
 .box-image {
   background-size:cover;
   background-position: center;
-  min-height: 30vh;
+  min-height: 800px;
+  background-repeat: no-repeat;
 }
 
 /* HOME PAGE BANNER */
