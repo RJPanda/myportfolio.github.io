@@ -8,7 +8,7 @@ brief: The client wanted animated gifs using an existing face 'mascot' used for 
 solution: The company markets to ages 18 - 35. It was Black and white and high contrast has an air of sophistication but I also chose to add a pop of the brand's main pink colour to keep it fun. Accent shapes are feminine.
 animation-path: ./assets/animations/data.json
 image_path: ./assets/images/be-there-beauty/Instagram-display.jpg
- - ./assets/images/be-there-beauty/photo-retouching.png
- - ./assets/animations/data.json
+- image: ./assets/images/be-there-beauty/photo-retouching.png
+- image: ./assets/animations/data.json
 hidden-index-banner: true
 ---
