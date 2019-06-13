@@ -121,12 +121,12 @@ layout: default
 <div>
   <ul>
   {% for pic in page.pictures %}
-   <li class="work-image">
-    <div>
+   <li>
+    <div  class="work-image">
      <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
      <h3 class="center">{{ pic.label }}</h3>
 
-      <div id ="skills"> <!-- START ANIMATION -->
+      <div id ="skills work-image"> <!-- START ANIMATION -->
         <script>
           lottie.loadAnimation({
             container: skills, // the dom element that will contain the animation
