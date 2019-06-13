@@ -795,6 +795,9 @@ a[download]::before {
   .intro-banner {
     min-height: 60vh;
   }
+  .box-effect {
+    top: 30%;
+  }
 }
 
 /* xs-sm - Mobile-landscape */
@@ -861,6 +864,9 @@ a[download]::before {
   .intro-banner {
     min-height: 70vh;
   }
+  .box-effect {
+    top: 27%;
+  }
 }
 
 /* sm-md - Tablet-portrait */
@@ -897,6 +903,9 @@ a[download]::before {
   .intro-banner {
     min-height: 80vh;
   }
+  .box-effect {
+    top: 32%;
+  }
 }
 
 /* md-lg - Tablet-landscape */
@@ -925,6 +934,9 @@ a[download]::before {
   }
   .intro-banner {
     min-height: 90vh;
+  }
+  .box-effect {
+    top: 36%;
   }
 }
 
