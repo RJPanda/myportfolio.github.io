@@ -118,40 +118,30 @@ layout: default
     </div>
   </div> <!-- END GRID -->
 
-<div>
-  <ul>
-  {% for pic in page.pictures %}
-   <li>
-    <div class="work-image">
-     <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
-     <h3 class="center">{{ pic.label }}</h3>
+  <div>
+    <ul>
+    {% for pic in page.pictures %}
+     <li>
+      <div class="work-image">
+       <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
+       <h3 class="center">{{ pic.label }}</h3>
 
-      <div id ="skills" class="work-animation"> <!-- START ANIMATION -->
-        <script>
-          lottie.loadAnimation({
-            container: skills, // the dom element that will contain the animation
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: '{{ page.animation-path }}' // the path to the animation json
-          });
-        </script>
-      </div> <!-- END ANIMATION -->
-      <h3 class="center">{{ page.animation-label }}</h3>
-    </div>
-   </li>
-  {% endfor %}
-  </ul>
-</div>
+        <div id ="skills" class="work-animation"> <!-- START ANIMATION -->
+          <script>
+            lottie.loadAnimation({
+              container: skills, // the dom element that will contain the animation
+              renderer: 'svg',
+              loop: true,
+              autoplay: true,
+              path: '{{ page.animation-path }}' // the path to the animation json
+            });
+          </script>
+        </div> <!-- END ANIMATION -->
 
-<div>
-
-
-
-
-</div>
-
-
-
-
+        <h3 class="center">{{ page.animation-label }}</h3>
+      </div>
+     </li>
+    {% endfor %}
+    </ul>
+  </div>
 </section>
