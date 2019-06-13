@@ -119,12 +119,25 @@ layout: default
   </div> <!-- END GRID -->
 
 <div>
-  <ul class="work-image center">
+  <ul class="work-image">
   {% for pic in page.pictures %}
    <li>
     <div>
      <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
-     <h3>{{ pic.label }}</h3>
+    {% if page.animation-id %}
+      <div class="block-animation" id="{{ page.animation-id }}">
+        <script type="text/javascript">
+          var animation_{{ page.animation-id }} = bodymovin.loadAnimation({
+            container: document.getElementById('{{ page.animation-id }}'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '{{ page.animation-path }}'
+          });
+        </script>
+      </div>
+    {% endif %}     
+     <h3 class="center">{{ pic.label }}</h3>
     </div>
    </li>
   {% endfor %}
@@ -132,6 +145,7 @@ layout: default
 </div>
 
 <div>
+
 
 
 
