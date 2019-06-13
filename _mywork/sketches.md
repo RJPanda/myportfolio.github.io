@@ -8,8 +8,8 @@ brief: A selection of non-digital sketches.
 solution: Artist study Pawel Kuczynski. Architecture of Spring Hill. Burnett Lane.
 image_path: ./assets/images/illustrations/Copic.jpg
 pictures:
-  - url: ./assets/images/illustrations/Copic.jpg
+  - url: ./assets/images/illustrations/character1.jpg
     label: architecture of spring hill
-  - url: ./assets/images/illustrations/Artist+Study.jpg
+  - url: ./assets/images/illustrations/artist-study.jpg
     label: artist study pawel kuczynski
 ---

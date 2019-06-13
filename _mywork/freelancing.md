@@ -9,9 +9,9 @@ solution: Each freelancing project involves research into the client and their g
 image_path: ./assets/images/freelancing/sdp-business-cards.jpg
 pictures:
   - url: ./assets/images/freelancing/joonicorn.jpg
-    label: ./Social media identity
+    label: social media identity
   - url: ./assets/images/freelancing/kiwi-slides.jpg
-    label: ./Slide deck for cyber security conference
+    label: slide deck for cyber security conference
   - url: ./assets/images/freelancing/grapeclub.jpg
-    label: ./invitation and logo for wine club
+    label: invitation and logo for wine club
 ---
