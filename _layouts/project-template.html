@@ -119,11 +119,12 @@ layout: default
   </div> <!-- END GRID -->
 
 <div>
-  <ul class="work-image">
+  <ul>
   {% for pic in page.pictures %}
-   <li>
+   <li class="work-image">
     <div>
      <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
+     <h3 class="center">{{ pic.label }}</h3>
 
       <div id ="skills"> <!-- START ANIMATION -->
         <script>
@@ -136,8 +137,8 @@ layout: default
           });
         </script>
       </div> <!-- END ANIMATION -->
+      <h3 class="center">{{ page.animation-label }}</h3>
 
-     <h3 class="center">{{ pic.label }}</h3>
     </div>
    </li>
   {% endfor %}
