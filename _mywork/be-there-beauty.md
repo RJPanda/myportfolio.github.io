@@ -9,7 +9,7 @@ solution: The company markets to ages 18 - 35. It was Black and white and high c
 animation-path: ./assets/animations/data.json
 image_path: ./assets/images/be-there-beauty/Instagram-display.jpg
 hidden-index-banner: true
-carousel:
+img:
   - image: ./assets/images/be-there-beauty/Instagram-display.jpg
     text: instagram display
 
