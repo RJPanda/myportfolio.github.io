@@ -1,6 +1,6 @@
 ---
 layout: project-template
-title: freelancing
+title: micro freelancing
 permalink: /:title
 disciplines: [presentations, brand identity]
 media: [illustrator, photoshop]
