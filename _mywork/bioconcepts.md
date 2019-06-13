@@ -8,8 +8,6 @@ brief: A selection of my work from the pharmaceutical company Bio Concepts - Pac
 solution: Product range focuses of minimal, high quality ingredients. Ingredients are intended to enhance the qualities of each-other. A nod to the Australian packaging with the mosaic pattern. Keywords, Simple, pure, minimal, synergy, science.
 image_path: ./assets/images/bioconcepts/addiction-illustration.jpg
 pictures:
-  - url: ./assets/images/bioconcepts/origional-logo.jpg
-    label: existing logo
   - url: ./assets/images/bioconcepts/logo-redesign-concept-one.jpg
     label: logo redesign concept one
   - url: ./assets/images/bioconcepts/logo-redesign-concept-two.jpg
