@@ -226,6 +226,7 @@ a {
 
 #skills {
   margin-bottom: 1rem;
+  max-height: 600px;
 }
 
 .about-columns {
