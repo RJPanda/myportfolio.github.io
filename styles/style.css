@@ -216,6 +216,7 @@ a {
 .my-logo {
  width: 3rem;
  height: 3rem;
+ z-index: 99;
 }
 
 /* ABOUT ME */
@@ -348,7 +349,7 @@ a {
 }
 
 .work-animation {
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .block-text {
@@ -791,6 +792,9 @@ a[download]::before {
     font-size: 8vw;
     text-align: left;
   }
+  .intro-banner {
+    min-height: 60vh;
+  }
 }
 
 /* xs-sm - Mobile-landscape */
@@ -854,6 +858,9 @@ a[download]::before {
     font-size: 8vw;
     text-align: left;
   }
+  .intro-banner {
+    min-height: 70vh;
+  }
 }
 
 /* sm-md - Tablet-portrait */
@@ -887,6 +894,9 @@ a[download]::before {
     font-size: 3vw;
     padding: 1rem 0rem;
   }
+  .intro-banner {
+    min-height: 80vh;
+  }
 }
 
 /* md-lg - Tablet-landscape */
@@ -912,6 +922,9 @@ a[download]::before {
   }
   #contact h1::first-letter {
   	color: #8cc2db;
+  }
+  .intro-banner {
+    min-height: 90vh;
   }
 }
 
