@@ -124,19 +124,19 @@ layout: default
    <li>
     <div>
      <a href="#"><img src="{{ pic.url }}" alt="image" /></a>
-    {% if page.animation-id %}
-      <div class="block-animation" id="{{ page.animation-id }}">
-        <script type="text/javascript">
-          var animation_{{ page.animation-id }} = bodymovin.loadAnimation({
-            container: document.getElementById('{{ page.animation-id }}'),
+
+      <div id ="skills"> <!-- START ANIMATION -->
+        <script>
+          lottie.loadAnimation({
+            container: skills, // the dom element that will contain the animation
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '{{ page.animation-path }}'
+            path: '{{ page.animation-path }}' // the path to the animation json
           });
         </script>
-      </div>
-    {% endif %}     
+      </div> <!-- END ANIMATION -->
+
      <h3 class="center">{{ pic.label }}</h3>
     </div>
    </li>

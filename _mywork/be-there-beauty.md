@@ -10,8 +10,6 @@ animation-path: ./assets/animations/data.json
 image_path: ./assets/images/be-there-beauty/Instagram-display.jpg
 hidden-index-banner: true
 pictures:
-  - url: ./assets/animations/data.json
-    label: animation
   - url: ./assets/images/be-there-beauty/photo-retouching.jpg
     label: photo retouching
 ---
