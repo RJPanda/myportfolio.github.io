@@ -336,15 +336,19 @@ a {
 .block-animation {
   position: absolute;
   overflow: hidden;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 .block-animation svg {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.work-animation {
+  max-width: 600px; 
 }
 
 .block-text {
