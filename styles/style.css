@@ -230,6 +230,10 @@ a {
   max-height: 600px;
 }
 
+#skills svg {
+  max-height: 800px;
+}
+
 .about-columns {
   min-width: 100%;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
