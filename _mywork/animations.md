@@ -5,7 +5,7 @@ permalink: /:title
 disciplines: [animation]
 media: [illustrator, after effects]
 brief: The goal is to have examples from After effects, Adobe animate, CSS, JS etc
-solution: Practicing animations for fun and profit.
+solution: I am practising animations for fun and profit.
 animation-path:
 animation-label:
 image_path: ./assets/animations/tritium_logo_animation_tumbnail.jpg
