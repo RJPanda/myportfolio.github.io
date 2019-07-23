@@ -13,4 +13,6 @@ hidden-index-banner: true
 pictures:
   - url: ./assets/animations/tritium_wordmark_animation.gif
     label: tritium wordmark
+  - url: ./assets/animations/Expo.jpg
+    label: Soon to be animated with Adobe Animate   
 ---
