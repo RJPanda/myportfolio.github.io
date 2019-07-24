@@ -12,7 +12,7 @@ image_path: ./assets/animations/tritium_logo_animation_tumbnail.jpg
 hidden-index-banner: true
 pictures:
   - url: ./assets/animations/tritium_wordmark_animation.gif
-    label: Animated with After Effects
-  - url: ./assets/animations/Expo.jpg
-    label: Soon to be animated with Adobe Animate   
+    label: Using After Effects
+  - url: ./assets/animations/tritium_social_animation.gif
+    label: Using Adobe Animate   
 ---
